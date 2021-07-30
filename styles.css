@@ -1,0 +1,77 @@
+body{
+	background: #000;
+}
+.calendar {
+	top: 0em;
+	left: 1em;
+	padding-top: 5px;
+	width: 80px;
+	background: #ededef;
+	font-size: 54px;
+	text-align: center;
+	color: #000;
+
+	border-radius: 3px;
+	position: absolute;
+}
+
+.calendar em {
+	display: block;
+	font-size: 15px;
+	color: #fff;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position:absolute;
+	margin-top: -84px;
+}
+
+.calendar:before {
+	content: "";
+	float: left;
+	left: 11px;
+	width: 8px;
+	height: 8px;
+	background: #111;
+	z-index: 1;
+	border-radius: 10px;
+	box-shadow: 0 1px 1px #fff;
+	position: absolute;
+}
+
+.calendar:after {
+	content: "";
+	float: right;
+	right: 11px;
+	width: 8px;
+	height: 8px;
+	background: #111;
+	z-index: 1;
+	border-radius: 10px;
+	box-shadow: 0 1px 1px #fff;
+	position: absolute;
+}
+
+.calendar em:after {
+	right: -26.1px;
+	content: "";
+	float: left;
+	margin: 10px;
+	width: 4px;
+	height: 16px;
+	background: #ededef;
+	z-index: 2;
+	position: absolute;
+	border-radius: 5px;
+}
+.calendar em:before {
+	content: "";
+	float: left;
+	margin: 10px;
+	width: 4px;
+	height: 16px;
+	background: #ededef;
+	z-index: 2;
+	left: 53.1px;
+	position: absolute;
+	border-radius: 5px;
+}
